@@ -1,0 +1,38 @@
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+/build
+build/Release
+build
+out
+
+# Dependency directories
+node_modules/
+jspm_packages/
+vendor/
+
+# Optional npm cache directory
+.npm
+
+# End of https://www.gitignore.io/api/node,macos,linux,windows
+dist
+.vscode
+.idea
+
+# Storybook
+storybook-static
+
+# Version control
+.git
+.history
+
+.cache
+*.bundle.js
+*.js.map
+public
+
+samples
+CHANGELOG*
+.nyc_output
+coverage

@@ -1,0 +1,72 @@
+{
+	"overrides": [
+		{
+			"files": [
+				"./src/**/*.test.ts"
+			],
+			"parser": "@typescript-eslint/parser",
+			"plugins": [
+				"prettier",
+				"import",
+				"unicorn",
+				"@typescript-eslint"
+			],
+			"parserOptions": {
+				"project": "./tsconfig.json",
+				"sourceType": "module"
+			},
+			"extends": [
+				"@sanv/eslint-config-base",
+				"@sanv/eslint-config-typescript",
+				"@sanv/eslint-config-tests",
+				"@sanv/eslint-config-tests-typescript",
+				"@sanv/eslint-config-unicorn",
+				"@sanv/eslint-config-unicorn-typescript",
+				"@sanv/eslint-config-import",
+				"@sanv/eslint-config-import-typescript",
+				"plugin:prettier/recommended",
+				"prettier/@typescript-eslint"
+			],
+			"rules": {
+				"import/no-nodejs-modules": "off",
+				"jest/no-try-expect": "off",
+				"jest/no-conditional-expect": "off",
+				"no-underscore-dangle": "off",
+				"no-magic-numbers": "off",
+				"@typescript-eslint/no-magic-numbers": "off"
+			}
+		},
+		{
+			"files": [
+				"./src/**/*.ts"
+			],
+			"parser": "@typescript-eslint/parser",
+			"plugins": [
+				"prettier",
+				"import",
+				"unicorn",
+				"@typescript-eslint"
+			],
+			"parserOptions": {
+				"project": "./tsconfig.json",
+				"sourceType": "module"
+			},
+			"extends": [
+				"@sanv/eslint-config-base",
+				"@sanv/eslint-config-typescript",
+				"@sanv/eslint-config-unicorn",
+				"@sanv/eslint-config-unicorn-typescript",
+				"@sanv/eslint-config-import",
+				"@sanv/eslint-config-import-typescript",
+				"plugin:prettier/recommended",
+				"prettier/@typescript-eslint"
+			],
+			"rules": {
+				"import/no-nodejs-modules": "off",
+				"no-underscore-dangle": "off",
+				"no-magic-numbers": "off",
+				"@typescript-eslint/no-magic-numbers": "off"
+			}
+		}
+	]
+}

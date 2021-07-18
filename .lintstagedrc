@@ -1,0 +1,8 @@
+{
+  "*.ts": [
+	"eslint",
+	"prettier --check",
+	"jest --bail --findRelatedTests",
+	"git add"
+  ]
+}
