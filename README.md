@@ -15,7 +15,7 @@ npm install --save @awesome-typescript/calculate-aspect-ratio
 ```
 
 #### How to use
-```
+```js
 import { aspectRatio, isLandscape, isPortrait, isStory, isSquare } from '@awesome-typescript/calculate-aspect-ratio'
 
 aspectRatio(640, 360) // 16:9
