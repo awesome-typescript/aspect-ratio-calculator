@@ -1,4 +1,11 @@
-import { isLandscape, isPortrait, isStory, isSquare } from '.'
+import {
+  isLandscape,
+  isPortrait,
+  isSquare,
+  isRatio_16_9,
+  isRatio_4_5,
+  isRatio_9_16,
+} from '.'
 
 describe('calculate-aspect-ratio', () => {
   test('isLandscape', () => {
@@ -9,11 +16,19 @@ describe('calculate-aspect-ratio', () => {
     expect(isPortrait(1080, 1350)).toBe(true)
   })
 
-  test('isStory', () => {
-    expect(isStory(720, 1280)).toBe(true)
-  })
-
   test('isSquare', () => {
     expect(isSquare(640, 640)).toBe(true)
+  })
+
+  test('isRatio_16_9', () => {
+    expect(isRatio_16_9(640, 360)).toBe(true)
+  })
+
+  test('isRatio_4_5', () => {
+    expect(isRatio_4_5(1080, 1350)).toBe(true)
+  })
+
+  test('isRatio_9_16', () => {
+    expect(isRatio_9_16(1080, 1920)).toBe(true)
   })
 })
